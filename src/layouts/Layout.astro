@@ -1,0 +1,165 @@
+---
+import '../styles/global.css';
+
+interface Props {
+  title?: string;
+  description?: string;
+}
+
+const {
+  title = "XSUS官网 - 高速稳定机场与网络加速服务 | vpnxsus.cfd",
+  description = "XSUS官网提供高速稳定的全球网络节点服务，支持 Windows、macOS、iPhone、Android 及 Clash 等常见客户端，适用于影音、游戏、AI 工具与跨境网络场景。",
+} = Astro.props;
+
+const canonicalURL = new URL(Astro.url.pathname, "https://vpnxsus.cfd/").href;
+
+// JSON-LD structured data
+const organizationSchema = {
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "XSUS",
+  "url": "https://vpnxsus.cfd/",
+  "logo": "https://vpnxsus.cfd/favicon.svg",
+  "description": "XSUS 全球高速网络加速与稳定机场服务品牌",
+  "sameAs": []
+};
+
+const websiteSchema = {
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "XSUS 官网",
+  "url": "https://vpnxsus.cfd/",
+  "description": description,
+  "inLanguage": "zh-CN"
+};
+
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "XSUS 官网首页",
+      "item": "https://vpnxsus.cfd/"
+    }
+  ]
+};
+
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "XSUS 是什么？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "XSUS 是专为电竞游戏、4K/8K 影音流媒体、AI 模型交互与跨境远程办公打造的高性能网络加速与全球节点连接服务品牌。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "XSUS 是 VPN 吗？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "XSUS 专注于基于底层高性能协议（如 Shadowsocks、V2Ray、Trojan 等）的节点加速服务，在路由分流、跨境低延迟与带宽并发方面相比传统全局 VPN 拥有更高的速度与灵活性。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "机场是什么意思？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "在网络技术语境中，“机场”是指提供多地区高速代理节点订阅的服务商，用户可以通过导入订阅链接到客户端快速实现智能分流与全球网络加速。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "XSUS 支持哪些设备与平台？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "XSUS 全面适配 Windows、macOS、iPhone (iOS)、Android 及 Linux 等主流操作系统，并支持多设备同时在线。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "XSUS 支持 Clash 等客户端吗？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "是的，XSUS 完美支持 Clash Verge、Clash Meta (Mihomo)、Shadowrocket (小火箭)、Sing-box、Surge、Quantumult X 等常见第三方代理客户端。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "如何选择最适合的节点地区？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "游戏与日常浏览推荐香港、台湾、日本低延迟节点；东南亚业务推荐新加坡节点；观看美区影音或访问 ChatGPT / Claude 等全球 AI 工具推荐美国高速节点。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "XSUS 是否支持 4K/8K 流媒体解锁与 AI 工具？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "是的，XSUS 所有核心节点均针对 Netflix、YouTube、Disney+ 等流媒体以及 OpenAI ChatGPT、Claude、Midjourney、GitHub Copilot 等 AI 工具进行了专门的路由优化与解锁支持。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "如何开始使用 XSUS？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "仅需 3 步：1. 点击立即注册创建 XSUS 账号；2. 根据需求选择套餐计划；3. 将专属订阅链接一键导入客户端即可极速开启连接。"
+      }
+    }
+  ]
+};
+---
+
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <meta name="generator" content={Astro.generator} />
+    
+    <!-- Primary Meta Tags -->
+    <title>{title}</title>
+    <meta name="title" content={title} />
+    <meta name="description" content={description} />
+    <meta name="keywords" content="XSUS, XSUS官网, XSUS机场, 机场推荐, VPN推荐, 稳定机场, 高速机场, Clash机场, 科学上网, 网络加速, 海外网络, 游戏加速, AI网络" />
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+    <link rel="canonical" href={canonicalURL} />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content={canonicalURL} />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:site_name" content="XSUS 官网" />
+    <meta property="og:locale" content="zh_CN" />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content={canonicalURL} />
+    <meta property="twitter:title" content={title} />
+    <meta property="twitter:description" content={description} />
+
+    <!-- Favicon & Manifest -->
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="apple-touch-icon" href="/favicon.svg" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <meta name="theme-color" content="#E60012" />
+
+    <!-- JSON-LD Structured Data -->
+    <script type="application/ld+json" set:html={JSON.stringify(organizationSchema)} />
+    <script type="application/ld+json" set:html={JSON.stringify(websiteSchema)} />
+    <script type="application/ld+json" set:html={JSON.stringify(breadcrumbSchema)} />
+    <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
+  </head>
+  <body class="bg-[#050505] text-[#FFFFFF] antialiased selection:bg-[#E60012] selection:text-white">
+    <slot />
+  </body>
+</html>

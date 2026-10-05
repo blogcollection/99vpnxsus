@@ -1,0 +1,16 @@
+{
+  "name": "XSUS 官网",
+  "short_name": "XSUS",
+  "description": "XSUS 官网提供高速稳定的全球网络节点服务，支持各大常见第三方代理客户端。",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#050505",
+  "theme_color": "#E60012",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    }
+  ]
+}

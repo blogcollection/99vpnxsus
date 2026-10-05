@@ -1,0 +1,1386 @@
+---
+import Layout from '../layouts/Layout.astro';
+
+const CTA_URL = "https://yinxingren1.invisibleaff.com/#/register?code=Gcp1CRso";
+const CTA_TARGET = "_blank";
+const CTA_REL = "nofollow sponsored noopener";
+---
+
+<Layout>
+  <!-- TOP NAVIGATION HEADER (Ultra-slim, Gaming Hardware Style) -->
+  <header class="sticky top-0 z-50 w-full bg-[#080808]/95 backdrop-blur-md border-b border-[#232329] shadow-lg">
+    <!-- Top 1px Red Accent Line -->
+    <div class="w-full h-[2px] bg-gradient-to-r from-transparent via-[#E60012] to-transparent"></div>
+    
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
+      <!-- Logo: XSUS // -->
+      <a href="/" class="flex items-center gap-2.5 group focus:outline-none" aria-label="XSUS 官网首页">
+        <div class="w-8 h-8 bg-[#0D0D11] border border-[#E60012]/60 flex items-center justify-center font-mono font-black text-white text-lg tracking-tighter group-hover:border-[#FF1538] group-hover:shadow-[0_0_12px_rgba(230,0,18,0.5)] transition-all">
+          <span class="text-[#E60012] group-hover:text-[#FF1538]">X</span>
+        </div>
+        <div class="flex items-baseline gap-1">
+          <span class="font-tech text-2xl font-black tracking-widest text-white uppercase group-hover:text-gray-100 transition-colors">XSUS</span>
+          <span class="text-[#E60012] font-black text-lg">//</span>
+        </div>
+      </a>
+
+      <!-- Desktop Nav Links -->
+      <nav class="hidden md:flex items-center space-x-6 lg:space-x-8 text-sm font-medium text-[#A7A7AD]" aria-label="主导航">
+        <a href="#hero" class="hover:text-white hover:text-[#FF1538] transition-colors py-1">首页</a>
+        <a href="#pricing" class="hover:text-white hover:text-[#FF1538] transition-colors py-1">套餐方案</a>
+        <a href="#explore" class="hover:text-white hover:text-[#FF1538] transition-colors py-1">探索 XSUS</a>
+        <a href="#nodes" class="hover:text-white hover:text-[#FF1538] transition-colors py-1">全球节点</a>
+        <a href="#highlights" class="hover:text-white hover:text-[#FF1538] transition-colors py-1">应用场景</a>
+        <a href="#clients" class="hover:text-white hover:text-[#FF1538] transition-colors py-1">客户端</a>
+        <a href="#why-us" class="hover:text-white hover:text-[#FF1538] transition-colors py-1">核心优势</a>
+        <a href="#guide" class="hover:text-white hover:text-[#FF1538] transition-colors py-1">使用指南</a>
+        <a href="#faq" class="hover:text-white hover:text-[#FF1538] transition-colors py-1">常见问题</a>
+      </nav>
+
+      <!-- Right Action CTA -->
+      <div class="hidden sm:flex items-center space-x-4">
+        <a 
+          href={CTA_URL} 
+          target={CTA_TARGET} 
+          rel={CTA_REL}
+          class="text-xs font-semibold text-[#A7A7AD] hover:text-white transition-colors tracking-wider uppercase px-3 py-1.5"
+        >
+          登录
+        </a>
+        <a 
+          href={CTA_URL} 
+          target={CTA_TARGET} 
+          rel={CTA_REL}
+          class="relative group overflow-hidden bg-[#E60012] hover:bg-[#FF1538] text-white text-xs font-bold uppercase tracking-wider px-5 py-2.5 rounded-[2px] transition-all duration-300 shadow-[0_0_15px_rgba(230,0,18,0.3)] hover:shadow-[0_0_25px_rgba(255,21,56,0.6)] flex items-center gap-1.5"
+        >
+          <span>立即注册</span>
+          <svg class="w-3.5 h-3.5 transform group-hover:translate-x-0.5 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+          </svg>
+        </a>
+      </div>
+
+      <!-- Mobile Hamburger Button -->
+      <div class="flex items-center sm:hidden">
+        <button 
+          id="mobile-menu-btn" 
+          type="button" 
+          class="text-[#A7A7AD] hover:text-white p-2 focus:outline-none"
+          aria-label="打开菜单"
+        >
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path id="menu-icon" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Dropdown Menu -->
+    <div id="mobile-menu" class="hidden sm:hidden bg-[#0B0B0D] border-b border-[#232329] px-4 pt-3 pb-6 space-y-3">
+      <div class="flex flex-col space-y-2 text-sm text-[#A7A7AD]">
+        <a href="#hero" class="mobile-nav-link py-2 hover:text-[#FF1538] border-b border-white/5">首页</a>
+        <a href="#pricing" class="mobile-nav-link py-2 hover:text-[#FF1538] border-b border-white/5">套餐方案</a>
+        <a href="#explore" class="mobile-nav-link py-2 hover:text-[#FF1538] border-b border-white/5">探索 XSUS</a>
+        <a href="#nodes" class="mobile-nav-link py-2 hover:text-[#FF1538] border-b border-white/5">全球节点</a>
+        <a href="#highlights" class="mobile-nav-link py-2 hover:text-[#FF1538] border-b border-white/5">应用场景</a>
+        <a href="#clients" class="mobile-nav-link py-2 hover:text-[#FF1538] border-b border-white/5">客户端支持</a>
+        <a href="#why-us" class="mobile-nav-link py-2 hover:text-[#FF1538] border-b border-white/5">核心优势</a>
+        <a href="#guide" class="mobile-nav-link py-2 hover:text-[#FF1538] border-b border-white/5">使用指南</a>
+        <a href="#faq" class="mobile-nav-link py-2 hover:text-[#FF1538]">常见问题</a>
+      </div>
+      <div class="pt-3 flex gap-3">
+        <a 
+          href={CTA_URL} 
+          target={CTA_TARGET} 
+          rel={CTA_REL}
+          class="flex-1 text-center py-2.5 bg-[#18181B] text-white text-xs font-semibold rounded-[2px]"
+        >
+          登录
+        </a>
+        <a 
+          href={CTA_URL} 
+          target={CTA_TARGET} 
+          rel={CTA_REL}
+          class="flex-1 text-center py-2.5 bg-[#E60012] text-white text-xs font-bold rounded-[2px] shadow-red-edge"
+        >
+          立即注册
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- HERO SECTION (Gaming Brand Giant Banner, 620-760px desktop) -->
+  <section id="hero" class="relative w-full min-h-[640px] lg:min-h-[720px] bg-[#050505] overflow-hidden flex items-center cyber-grid border-b border-[#18181B]">
+    <!-- Ambient Red & Blue Tech Glow Background -->
+    <div class="absolute -top-40 left-1/2 -translate-x-1/2 w-[800px] h-[500px] bg-[#E60012]/15 blur-[140px] rounded-full pointer-events-none"></div>
+    <div class="absolute bottom-0 right-0 w-[500px] h-[400px] bg-[#0051FF]/10 blur-[120px] rounded-full pointer-events-none"></div>
+    
+    <!-- Fine Cyber Speed Lines -->
+    <div class="absolute inset-0 opacity-20 pointer-events-none bg-[radial-gradient(#E60012_1px,transparent_1px)] [background-size:24px_24px]"></div>
+
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 lg:py-16 w-full relative z-10">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-center">
+        
+        <!-- Left Hero Content -->
+        <div class="lg:col-span-7 space-y-6 text-left">
+          
+          <!-- Category Tag -->
+          <div class="inline-flex items-center gap-2 px-3 py-1 bg-[#111115] border border-[#E60012]/40 rounded-[2px]">
+            <span class="w-2 h-2 rounded-full bg-[#FF1538] animate-pulse"></span>
+            <span class="font-mono text-[11px] font-bold tracking-widest text-[#A7A7AD] uppercase">XSUS HIGH PERFORMANCE NETWORK</span>
+          </div>
+
+          <!-- Main H1 Headline -->
+          <div class="space-y-1">
+            <div class="font-tech text-4xl sm:text-5xl lg:text-6xl font-black tracking-tight text-white uppercase leading-none">
+              XSUS
+            </div>
+            <h1 class="text-3xl sm:text-5xl lg:text-5xl font-black text-transparent bg-clip-text bg-gradient-to-r from-white via-white to-[#FF1538] tracking-tight leading-tight">
+              为速度而生，不只是快，更要稳
+            </h1>
+          </div>
+
+          <!-- Subtitle -->
+          <p class="text-base sm:text-lg text-[#A7A7AD] max-w-2xl leading-relaxed">
+            面向游戏竞技、4K/8K 影音、全球 AI 模型与跨境网络场景的高速网络加速服务。低延迟节点覆盖，多设备无缝连接，全天候稳定在线。
+          </p>
+
+          <!-- Core Badges (Horizontal) -->
+          <div class="grid grid-cols-2 sm:grid-cols-4 gap-2 pt-2 pb-2">
+            <div class="bg-[#0B0B0D] border border-[#232329] p-2.5 rounded-[2px] flex items-center gap-2">
+              <svg class="w-4 h-4 text-[#FF1538] flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
+              </svg>
+              <span class="text-xs font-semibold text-gray-200">高速节点</span>
+            </div>
+            <div class="bg-[#0B0B0D] border border-[#232329] p-2.5 rounded-[2px] flex items-center gap-2">
+              <svg class="w-4 h-4 text-[#FF1538] flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+              </svg>
+              <span class="text-xs font-semibold text-gray-200">极低延迟</span>
+            </div>
+            <div class="bg-[#0B0B0D] border border-[#232329] p-2.5 rounded-[2px] flex items-center gap-2">
+              <svg class="w-4 h-4 text-[#FF1538] flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064" />
+              </svg>
+              <span class="text-xs font-semibold text-gray-200">全球线路</span>
+            </div>
+            <div class="bg-[#0B0B0D] border border-[#232329] p-2.5 rounded-[2px] flex items-center gap-2">
+              <svg class="w-4 h-4 text-[#FF1538] flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+              </svg>
+              <span class="text-xs font-semibold text-gray-200">多设备支持</span>
+            </div>
+          </div>
+
+          <!-- Hero CTAs -->
+          <div class="flex flex-col sm:flex-row gap-4 pt-2">
+            <a 
+              href={CTA_URL} 
+              target={CTA_TARGET} 
+              rel={CTA_REL}
+              class="inline-flex items-center justify-center gap-2 bg-[#E60012] hover:bg-[#FF1538] text-white font-bold text-sm uppercase tracking-wider px-8 py-4 rounded-[2px] transition-all duration-300 shadow-[0_0_20px_rgba(230,0,18,0.4)] hover:shadow-[0_0_35px_rgba(255,21,56,0.7)] group"
+            >
+              <span>立即使用 XSUS</span>
+              <svg class="w-4 h-4 transform group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+              </svg>
+            </a>
+            <a 
+              href="#pricing" 
+              class="inline-flex items-center justify-center gap-2 bg-[#111115] hover:bg-[#18181B] text-white border border-[#232329] hover:border-[#E60012] font-semibold text-sm tracking-wider px-8 py-4 rounded-[2px] transition-all duration-300"
+            >
+              <span>查看套餐</span>
+            </a>
+          </div>
+
+        </div>
+
+        <!-- Right Hero Visual: 3D Cyber Network Core Apparatus -->
+        <div class="lg:col-span-5 relative flex items-center justify-center">
+          <div class="relative w-full max-w-[460px] aspect-square bg-[#0B0B0E]/90 border border-[#232329] rounded-[4px] p-6 shadow-2xl flex flex-col justify-between overflow-hidden group">
+            
+            <!-- Tech corner markers -->
+            <div class="absolute top-2 left-2 w-3 h-3 border-t-2 border-l-2 border-[#FF1538]"></div>
+            <div class="absolute top-2 right-2 w-3 h-3 border-t-2 border-r-2 border-[#FF1538]"></div>
+            <div class="absolute bottom-2 left-2 w-3 h-3 border-b-2 border-l-2 border-[#FF1538]"></div>
+            <div class="absolute bottom-2 right-2 w-3 h-3 border-b-2 border-r-2 border-[#FF1538]"></div>
+
+            <!-- Header of Visual Machine -->
+            <div class="flex items-center justify-between border-b border-[#18181B] pb-3 text-xs font-mono text-[#A7A7AD]">
+              <div class="flex items-center gap-2">
+                <span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
+                <span class="text-white font-bold tracking-wider">XSUS QUANTUM CORE V4</span>
+              </div>
+              <span class="text-[#FF1538]">STATUS: ACTIVE</span>
+            </div>
+
+            <!-- Central Hardware Apparatus Diagram -->
+            <div class="relative my-4 flex items-center justify-center py-6">
+              
+              <!-- Concentric Outer Ring -->
+              <div class="absolute w-56 h-56 rounded-full border border-dashed border-[#E60012]/30 animate-[spin_25s_linear_infinite]"></div>
+              <div class="absolute w-44 h-44 rounded-full border border-[#00F0FF]/20 animate-[spin_15s_linear_infinite_reverse]"></div>
+              
+              <!-- Center Glowing Reactor -->
+              <div class="relative w-28 h-28 bg-gradient-to-br from-[#18181B] to-[#080808] border-2 border-[#FF1538] rounded-full flex flex-col items-center justify-center shadow-[0_0_30px_rgba(230,0,18,0.5)]">
+                <div class="font-tech text-lg font-black text-white tracking-widest">XSUS</div>
+                <div class="font-mono text-[10px] text-[#FF1538] tracking-widest">10 Gbps</div>
+                <div class="w-8 h-0.5 bg-[#FF1538] mt-1"></div>
+              </div>
+
+              <!-- Orbiting Telemetry Badges -->
+              <div class="absolute top-0 right-4 bg-[#111115] border border-[#232329] px-2.5 py-1 rounded-[2px] text-[11px] font-mono text-emerald-400 shadow-lg">
+                HK: <span class="font-bold">14ms</span>
+              </div>
+              <div class="absolute bottom-2 left-4 bg-[#111115] border border-[#232329] px-2.5 py-1 rounded-[2px] text-[11px] font-mono text-cyan-400 shadow-lg">
+                JP: <span class="font-bold">29ms</span>
+              </div>
+              <div class="absolute top-1/2 -left-2 -translate-y-1/2 bg-[#111115] border border-[#232329] px-2 py-1 rounded-[2px] text-[11px] font-mono text-amber-400 shadow-lg">
+                US: <span class="font-bold">115ms</span>
+              </div>
+            </div>
+
+            <!-- Bottom Telemetry Stream -->
+            <div class="bg-[#070709] border border-[#18181B] p-3 rounded-[2px] space-y-1.5 font-mono text-[11px]">
+              <div class="flex justify-between text-[#A7A7AD]">
+                <span>ROUTING PROTOCOL</span>
+                <span class="text-white">BGP MULTI-HOMED</span>
+              </div>
+              <div class="flex justify-between text-[#A7A7AD]">
+                <span>PACKET LOSS RATE</span>
+                <span class="text-emerald-400 font-bold">0.00%</span>
+              </div>
+              <div class="w-full bg-[#18181B] h-1.5 rounded-full overflow-hidden">
+                <div class="bg-gradient-to-r from-[#E60012] to-[#FF1538] h-full w-[94%]"></div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Hero Bottom Scroll Indicator -->
+      <div class="pt-10 flex justify-center">
+        <a href="#pricing" class="flex flex-col items-center gap-1.5 text-[11px] font-mono tracking-widest text-[#71717A] hover:text-[#FF1538] transition-colors">
+          <span>SCROLL TO EXPLORE</span>
+          <svg class="w-4 h-4 animate-bounce text-[#FF1538]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3" />
+          </svg>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- PRODUCT EXPLORE CATEGORIES (White/Light Contrast Bar inspired by Hardware Categories) -->
+  <section id="explore" class="w-full bg-[#FFFFFF] text-[#080808] py-14 border-b border-gray-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center space-y-2 mb-10">
+        <h2 class="font-tech text-2xl sm:text-3xl font-black tracking-wider uppercase text-[#050505]">
+          探索 XSUS
+        </h2>
+        <p class="text-sm sm:text-base text-gray-600 max-w-xl mx-auto">
+          为不同场景量身定制的高性能加速通道，一键解锁全场景网络自由
+        </p>
+      </div>
+
+      <!-- Horizontal Grid / Scroll Bar -->
+      <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
+        
+        <!-- Cat 1 -->
+        <a href="#nodes" class="group bg-[#F4F4F5] hover:bg-[#080808] hover:text-white p-5 rounded-[4px] border-b-2 border-transparent hover:border-[#E60012] transition-all duration-300 flex flex-col items-center text-center space-y-3 shadow-sm hover:shadow-xl">
+          <div class="w-12 h-12 rounded-[2px] bg-white group-hover:bg-[#18181B] flex items-center justify-center text-[#E60012] group-hover:text-[#FF1538] shadow-sm transition-colors">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064" />
+            </svg>
+          </div>
+          <div>
+            <h3 class="font-bold text-sm group-hover:text-white">全球节点</h3>
+            <p class="text-xs text-gray-500 group-hover:text-gray-400 mt-0.5">高速骨干网络</p>
+          </div>
+        </a>
+
+        <!-- Cat 2 -->
+        <a href="#highlights" class="group bg-[#F4F4F5] hover:bg-[#080808] hover:text-white p-5 rounded-[4px] border-b-2 border-transparent hover:border-[#E60012] transition-all duration-300 flex flex-col items-center text-center space-y-3 shadow-sm hover:shadow-xl">
+          <div class="w-12 h-12 rounded-[2px] bg-white group-hover:bg-[#18181B] flex items-center justify-center text-[#E60012] group-hover:text-[#FF1538] shadow-sm transition-colors">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z" />
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+            </svg>
+          </div>
+          <div>
+            <h3 class="font-bold text-sm group-hover:text-white">影音解锁</h3>
+            <p class="text-xs text-gray-500 group-hover:text-gray-400 mt-0.5">4K/8K 极速流畅</p>
+          </div>
+        </a>
+
+        <!-- Cat 3 -->
+        <a href="#highlights" class="group bg-[#F4F4F5] hover:bg-[#080808] hover:text-white p-5 rounded-[4px] border-b-2 border-transparent hover:border-[#E60012] transition-all duration-300 flex flex-col items-center text-center space-y-3 shadow-sm hover:shadow-xl">
+          <div class="w-12 h-12 rounded-[2px] bg-white group-hover:bg-[#18181B] flex items-center justify-center text-[#E60012] group-hover:text-[#FF1538] shadow-sm transition-colors">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
+            </svg>
+          </div>
+          <div>
+            <h3 class="font-bold text-sm group-hover:text-white">游戏加速</h3>
+            <p class="text-xs text-gray-500 group-hover:text-gray-400 mt-0.5">极低延迟与抖动</p>
+          </div>
+        </a>
+
+        <!-- Cat 4 -->
+        <a href="#highlights" class="group bg-[#F4F4F5] hover:bg-[#080808] hover:text-white p-5 rounded-[4px] border-b-2 border-transparent hover:border-[#E60012] transition-all duration-300 flex flex-col items-center text-center space-y-3 shadow-sm hover:shadow-xl">
+          <div class="w-12 h-12 rounded-[2px] bg-white group-hover:bg-[#18181B] flex items-center justify-center text-[#E60012] group-hover:text-[#FF1538] shadow-sm transition-colors">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
+            </svg>
+          </div>
+          <div>
+            <h3 class="font-bold text-sm group-hover:text-white">AI 工具</h3>
+            <p class="text-xs text-gray-500 group-hover:text-gray-400 mt-0.5">ChatGPT/Claude直连</p>
+          </div>
+        </a>
+
+        <!-- Cat 5 -->
+        <a href="#clients" class="group bg-[#F4F4F5] hover:bg-[#080808] hover:text-white p-5 rounded-[4px] border-b-2 border-transparent hover:border-[#E60012] transition-all duration-300 flex flex-col items-center text-center space-y-3 shadow-sm hover:shadow-xl">
+          <div class="w-12 h-12 rounded-[2px] bg-white group-hover:bg-[#18181B] flex items-center justify-center text-[#E60012] group-hover:text-[#FF1538] shadow-sm transition-colors">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z" />
+            </svg>
+          </div>
+          <div>
+            <h3 class="font-bold text-sm group-hover:text-white">手机使用</h3>
+            <p class="text-xs text-gray-500 group-hover:text-gray-400 mt-0.5">iOS / Android 随身</p>
+          </div>
+        </a>
+
+        <!-- Cat 6 -->
+        <a href="#clients" class="group bg-[#F4F4F5] hover:bg-[#080808] hover:text-white p-5 rounded-[4px] border-b-2 border-transparent hover:border-[#E60012] transition-all duration-300 flex flex-col items-center text-center space-y-3 shadow-sm hover:shadow-xl">
+          <div class="w-12 h-12 rounded-[2px] bg-white group-hover:bg-[#18181B] flex items-center justify-center text-[#E60012] group-hover:text-[#FF1538] shadow-sm transition-colors">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+            </svg>
+          </div>
+          <div>
+            <h3 class="font-bold text-sm group-hover:text-white">电脑使用</h3>
+            <p class="text-xs text-gray-500 group-hover:text-gray-400 mt-0.5">Windows / macOS / Linux</p>
+          </div>
+        </a>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- PRICING & PLANS SECTION (Hardware Catalog Aesthetics) -->
+  <section id="pricing" class="w-full bg-[#080808] py-20 border-b border-[#18181B] relative">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <!-- Section Header -->
+      <div class="text-center space-y-3 mb-16">
+        <div class="inline-block px-3 py-1 bg-[#18181B] border border-[#27272A] text-xs font-mono font-bold text-[#FF1538] uppercase">
+          PERFORMANCE PLANS
+        </div>
+        <h2 class="font-tech text-3xl sm:text-4xl font-black text-white tracking-wide uppercase">
+          选择你的 XSUS 套餐
+        </h2>
+        <p class="text-[#A7A7AD] text-sm sm:text-base max-w-xl mx-auto">
+          不同需求，不同速度方案。根据你的设备数量与流量需求，自由选择合适的高速通道。
+        </p>
+      </div>
+
+      <!-- 4 Plan Cards (Crisp Rectangular Gaming Cards) -->
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+        
+        <!-- Plan 1: Lite -->
+        <div class="bg-[#0D0D11] border border-[#232329] hover:border-[#E60012] rounded-[4px] p-6 flex flex-col justify-between transition-all duration-300 hover:-translate-y-1.5 shadow-cyber-card group">
+          <div class="space-y-4">
+            <div class="flex justify-between items-start">
+              <div>
+                <h3 class="font-tech text-xl font-bold text-white uppercase group-hover:text-[#FF1538] transition-colors">XSUS Lite</h3>
+                <p class="text-xs text-[#71717A] mt-1">适合轻度浏览与信息检索</p>
+              </div>
+            </div>
+            
+            <div class="py-4 border-y border-[#18181B]">
+              <span class="text-xs font-mono text-[#A7A7AD]">实时价格</span>
+              <div class="text-2xl font-black text-white font-tech mt-0.5">查看实时价格</div>
+            </div>
+
+            <ul class="space-y-2.5 text-xs text-[#A7A7AD]">
+              <li class="flex items-center gap-2">
+                <svg class="w-4 h-4 text-emerald-500 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+                <span>基础高速节点覆盖</span>
+              </li>
+              <li class="flex items-center gap-2">
+                <svg class="w-4 h-4 text-emerald-500 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+                <span>多地区标准优化线路</span>
+              </li>
+              <li class="flex items-center gap-2">
+                <svg class="w-4 h-4 text-emerald-500 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+                <span>基础流媒体内容支持</span>
+              </li>
+              <li class="flex items-center gap-2">
+                <svg class="w-4 h-4 text-emerald-500 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+                <span>智能分流与规则过滤</span>
+              </li>
+            </ul>
+          </div>
+
+          <div class="pt-6">
+            <a 
+              href={CTA_URL} 
+              target={CTA_TARGET} 
+              rel={CTA_REL}
+              class="w-full block text-center bg-[#18181B] hover:bg-[#E60012] text-white text-xs font-bold uppercase tracking-wider py-3 rounded-[2px] transition-all border border-[#27272A] hover:border-[#E60012]"
+            >
+              查看套餐
+            </a>
+          </div>
+        </div>
+
+        <!-- Plan 2: Pro (Recommended) -->
+        <div class="relative bg-[#111117] border-2 border-[#E60012] rounded-[4px] p-6 flex flex-col justify-between transition-all duration-300 hover:-translate-y-1.5 shadow-[0_0_25px_rgba(230,0,18,0.25)] group">
+          <!-- Recommended Badge -->
+          <div class="absolute -top-3.5 left-1/2 -translate-x-1/2 bg-[#E60012] text-white text-[10px] font-mono font-black uppercase tracking-widest px-3 py-0.5 rounded-[2px] shadow-red-edge">
+            RECOMMENDED / 官方推荐
+          </div>
+
+          <div class="space-y-4">
+            <div class="flex justify-between items-start pt-1">
+              <div>
+                <h3 class="font-tech text-xl font-bold text-white uppercase group-hover:text-[#FF1538] transition-colors">XSUS Pro</h3>
+                <p class="text-xs text-[#FF1538] font-medium mt-1">适合日常长期使用与主力加速</p>
+              </div>
+            </div>
+            
+            <div class="py-4 border-y border-[#232329]">
+              <span class="text-xs font-mono text-[#A7A7AD]">实时价格</span>
+              <div class="text-2xl font-black text-white font-tech mt-0.5">查看实时价格</div>
+            </div>
+
+            <ul class="space-y-2.5 text-xs text-gray-300">
+              <li class="flex items-center gap-2">
+                <svg class="w-4 h-4 text-[#FF1538] flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+                <span class="font-semibold text-white">更多高速独享节点</span>
+              </li>
+              <li class="flex items-center gap-2">
+                <svg class="w-4 h-4 text-[#FF1538] flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+                <span>4K/8K 流媒体全解锁</span>
+              </li>
+              <li class="flex items-center gap-2">
+                <svg class="w-4 h-4 text-[#FF1538] flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+                <span>AI 工具 (ChatGPT/Claude) 极速直连</span>
+              </li>
+              <li class="flex items-center gap-2">
+                <svg class="w-4 h-4 text-[#FF1538] flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+                <span>更高峰值带宽保障</span>
+              </li>
+            </ul>
+          </div>
+
+          <div class="pt-6">
+            <a 
+              href={CTA_URL} 
+              target={CTA_TARGET} 
+              rel={CTA_REL}
+              class="w-full block text-center bg-[#E60012] hover:bg-[#FF1538] text-white text-xs font-bold uppercase tracking-wider py-3 rounded-[2px] transition-all shadow-[0_0_15px_rgba(230,0,18,0.4)] hover:shadow-[0_0_25px_rgba(255,21,56,0.7)]"
+            >
+              立即选择 Pro
+            </a>
+          </div>
+        </div>
+
+        <!-- Plan 3: Ultra -->
+        <div class="bg-[#0D0D11] border border-[#232329] hover:border-[#E60012] rounded-[4px] p-6 flex flex-col justify-between transition-all duration-300 hover:-translate-y-1.5 shadow-cyber-card group">
+          <div class="space-y-4">
+            <div class="flex justify-between items-start">
+              <div>
+                <h3 class="font-tech text-xl font-bold text-white uppercase group-hover:text-[#FF1538] transition-colors">XSUS Ultra</h3>
+                <p class="text-xs text-[#71717A] mt-1">适合重度游戏与超高清视频</p>
+              </div>
+            </div>
+            
+            <div class="py-4 border-y border-[#18181B]">
+              <span class="text-xs font-mono text-[#A7A7AD]">实时价格</span>
+              <div class="text-2xl font-black text-white font-tech mt-0.5">查看实时价格</div>
+            </div>
+
+            <ul class="space-y-2.5 text-xs text-[#A7A7AD]">
+              <li class="flex items-center gap-2">
+                <svg class="w-4 h-4 text-emerald-500 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+                <span class="text-white">高速独享专线通道</span>
+              </li>
+              <li class="flex items-center gap-2">
+                <svg class="w-4 h-4 text-emerald-500 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+                <span>游戏/视频/AI 全场景加速</span>
+              </li>
+              <li class="flex items-center gap-2">
+                <svg class="w-4 h-4 text-emerald-500 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+                <span>多设备同时高并发</span>
+              </li>
+              <li class="flex items-center gap-2">
+                <svg class="w-4 h-4 text-emerald-500 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+                <span>高峰期优先调度保障</span>
+              </li>
+            </ul>
+          </div>
+
+          <div class="pt-6">
+            <a 
+              href={CTA_URL} 
+              target={CTA_TARGET} 
+              rel={CTA_REL}
+              class="w-full block text-center bg-[#18181B] hover:bg-[#E60012] text-white text-xs font-bold uppercase tracking-wider py-3 rounded-[2px] transition-all border border-[#27272A] hover:border-[#E60012]"
+            >
+              查看套餐
+            </a>
+          </div>
+        </div>
+
+        <!-- Plan 4: Max -->
+        <div class="bg-[#0D0D11] border border-[#232329] hover:border-[#E60012] rounded-[4px] p-6 flex flex-col justify-between transition-all duration-300 hover:-translate-y-1.5 shadow-cyber-card group">
+          <div class="space-y-4">
+            <div class="flex justify-between items-start">
+              <div>
+                <h3 class="font-tech text-xl font-bold text-white uppercase group-hover:text-[#FF1538] transition-colors">XSUS Max</h3>
+                <p class="text-xs text-[#71717A] mt-1">适合团队与多设备高流量需求</p>
+              </div>
+            </div>
+            
+            <div class="py-4 border-y border-[#18181B]">
+              <span class="text-xs font-mono text-[#A7A7AD]">实时价格</span>
+              <div class="text-2xl font-black text-white font-tech mt-0.5">查看实时价格</div>
+            </div>
+
+            <ul class="space-y-2.5 text-xs text-[#A7A7AD]">
+              <li class="flex items-center gap-2">
+                <svg class="w-4 h-4 text-emerald-500 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+                <span class="text-white">超大流量与极速带宽</span>
+              </li>
+              <li class="flex items-center gap-2">
+                <svg class="w-4 h-4 text-emerald-500 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+                <span>多端全平台并发无忧</span>
+              </li>
+              <li class="flex items-center gap-2">
+                <svg class="w-4 h-4 text-emerald-500 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+                <span>跨境业务与协同办公保障</span>
+              </li>
+              <li class="flex items-center gap-2">
+                <svg class="w-4 h-4 text-emerald-500 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+                <span>专属客服与快速工单响应</span>
+              </li>
+            </ul>
+          </div>
+
+          <div class="pt-6">
+            <a 
+              href={CTA_URL} 
+              target={CTA_TARGET} 
+              rel={CTA_REL}
+              class="w-full block text-center bg-[#18181B] hover:bg-[#E60012] text-white text-xs font-bold uppercase tracking-wider py-3 rounded-[2px] transition-all border border-[#27272A] hover:border-[#E60012]"
+            >
+              查看套餐
+            </a>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Live Price Notice -->
+      <div class="mt-8 text-center text-xs text-[#71717A]">
+        * 套餐价格与周期请以注册登录后的实时结算中心为准。支持支付宝、微信等主流支付方式。
+      </div>
+
+    </div>
+  </section>
+
+  <!-- GLOBAL HIGH-SPEED NODES SECTION -->
+  <section id="nodes" class="w-full bg-[#050505] py-20 border-b border-[#18181B] relative overflow-hidden">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="flex flex-col md:flex-row md:items-end justify-between mb-12">
+        <div>
+          <div class="text-xs font-mono font-bold text-[#FF1538] uppercase tracking-wider">GLOBAL NETWORK MATRIX</div>
+          <h2 class="font-tech text-3xl sm:text-4xl font-black text-white mt-1 uppercase">
+            连接全球高速节点
+          </h2>
+        </div>
+        <p class="text-sm text-[#A7A7AD] max-w-md mt-3 md:mt-0">
+          优选亚太与欧美主流地区骨干线路，智能负载均衡，保障多节点毫秒级连接响应。
+        </p>
+      </div>
+
+      <!-- Node Interactive Visual Grid -->
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-4 mb-10">
+        
+        <!-- Node 1: HK -->
+        <div class="bg-[#0B0B0D] border border-[#232329] hover:border-[#E60012] p-5 rounded-[4px] space-y-3 transition-all">
+          <div class="flex items-center justify-between">
+            <div class="flex items-center gap-2">
+              <span class="text-xl">🇭🇰</span>
+              <span class="font-bold text-white text-sm">香港节点</span>
+            </div>
+            <span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
+          </div>
+          <div class="text-xs text-[#A7A7AD] space-y-1 font-mono">
+            <div class="flex justify-between"><span>线路特性</span><span class="text-white">极低延迟 · 直连</span></div>
+            <div class="flex justify-between"><span>推荐场景</span><span class="text-[#FF1538]">日常/游戏/网页</span></div>
+          </div>
+        </div>
+
+        <!-- Node 2: TW -->
+        <div class="bg-[#0B0B0D] border border-[#232329] hover:border-[#E60012] p-5 rounded-[4px] space-y-3 transition-all">
+          <div class="flex items-center justify-between">
+            <div class="flex items-center gap-2">
+              <span class="text-xl">🇹🇼</span>
+              <span class="font-bold text-white text-sm">台湾节点</span>
+            </div>
+            <span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
+          </div>
+          <div class="text-xs text-[#A7A7AD] space-y-1 font-mono">
+            <div class="flex justify-between"><span>线路特性</span><span class="text-white">原生解锁 · 稳定</span></div>
+            <div class="flex justify-between"><span>推荐场景</span><span class="text-[#FF1538]">动漫/影音/直播</span></div>
+          </div>
+        </div>
+
+        <!-- Node 3: JP -->
+        <div class="bg-[#0B0B0D] border border-[#232329] hover:border-[#E60012] p-5 rounded-[4px] space-y-3 transition-all">
+          <div class="flex items-center justify-between">
+            <div class="flex items-center gap-2">
+              <span class="text-xl">🇯🇵</span>
+              <span class="font-bold text-white text-sm">日本节点</span>
+            </div>
+            <span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
+          </div>
+          <div class="text-xs text-[#A7A7AD] space-y-1 font-mono">
+            <div class="flex justify-between"><span>线路特性</span><span class="text-white">高速骨干 · 大带宽</span></div>
+            <div class="flex justify-between"><span>推荐场景</span><span class="text-[#FF1538]">4K视频/日服游戏</span></div>
+          </div>
+        </div>
+
+        <!-- Node 4: SG -->
+        <div class="bg-[#0B0B0D] border border-[#232329] hover:border-[#E60012] p-5 rounded-[4px] space-y-3 transition-all">
+          <div class="flex items-center justify-between">
+            <div class="flex items-center gap-2">
+              <span class="text-xl">🇸🇬</span>
+              <span class="font-bold text-white text-sm">新加坡节点</span>
+            </div>
+            <span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
+          </div>
+          <div class="text-xs text-[#A7A7AD] space-y-1 font-mono">
+            <div class="flex justify-between"><span>线路特性</span><span class="text-white">东南亚优化 · 低抖动</span></div>
+            <div class="flex justify-between"><span>推荐场景</span><span class="text-[#FF1538]">跨境业务/出海开发</span></div>
+          </div>
+        </div>
+
+        <!-- Node 5: US -->
+        <div class="bg-[#0B0B0D] border border-[#232329] hover:border-[#E60012] p-5 rounded-[4px] space-y-3 transition-all">
+          <div class="flex items-center justify-between">
+            <div class="flex items-center gap-2">
+              <span class="text-xl">🇺🇸</span>
+              <span class="font-bold text-white text-sm">美国节点</span>
+            </div>
+            <span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
+          </div>
+          <div class="text-xs text-[#A7A7AD] space-y-1 font-mono">
+            <div class="flex justify-between"><span>线路特性</span><span class="text-white">影音 / AI 专享</span></div>
+            <div class="flex justify-between"><span>推荐场景</span><span class="text-[#FF1538]">ChatGPT / Claude</span></div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- High Tech Map Vector Illustration Canvas -->
+      <div class="relative w-full h-64 sm:h-80 bg-[#08080C] border border-[#232329] rounded-[4px] overflow-hidden flex items-center justify-center p-6 cyber-grid-red">
+        <!-- Abstract Tech Map Grid -->
+        <div class="absolute inset-0 bg-radial-glow opacity-30 pointer-events-none"></div>
+        
+        <div class="text-center space-y-2 relative z-10">
+          <div class="font-tech text-lg sm:text-xl font-bold text-white tracking-widest uppercase">
+            XSUS GLOBAL LOW-LATENCY TOPOLOGY
+          </div>
+          <p class="text-xs sm:text-sm text-[#A7A7AD] max-w-lg mx-auto">
+            动态智能 BGP 路由，实时避开国际网络拥堵节点，确保全天候毫秒级低延迟体验。
+          </p>
+          <div class="pt-3">
+            <a 
+              href={CTA_URL} 
+              target={CTA_TARGET} 
+              rel={CTA_REL}
+              class="inline-flex items-center gap-2 bg-[#E60012] hover:bg-[#FF1538] text-white text-xs font-bold uppercase tracking-wider px-5 py-2.5 rounded-[2px] transition-all shadow-red-edge"
+            >
+              <span>获取节点订阅</span>
+            </a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- SCENARIO HIGHLIGHTS EDITORIAL GRID (ROG Highlights Style) -->
+  <section id="highlights" class="w-full bg-[#080808] py-20 border-b border-[#18181B]">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="space-y-2 mb-12">
+        <div class="text-xs font-mono font-bold text-[#FF1538] uppercase tracking-wider">PERFORMANCE HIGHLIGHTS</div>
+        <h2 class="font-tech text-3xl sm:text-4xl font-black text-white uppercase">
+          全场景极速表现
+        </h2>
+      </div>
+
+      <!-- Editorial Grid (Large left + split right, cyber gaming lighting aesthetic) -->
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-6">
+        
+        <!-- Large Left: Gaming Acceleration -->
+        <div class="lg:col-span-6 bg-[#0E0E12] border border-[#232329] rounded-[4px] p-8 flex flex-col justify-between relative overflow-hidden group hover:border-[#E60012] transition-all">
+          <div class="absolute top-0 right-0 w-64 h-64 bg-[#E60012]/10 blur-[80px] rounded-full pointer-events-none"></div>
+          
+          <div class="space-y-4 relative z-10">
+            <div class="inline-flex items-center gap-2 px-2.5 py-1 bg-[#18181B] text-[#FF1538] text-xs font-mono font-bold rounded-[2px]">
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
+              <span>GAMING ACCELERATION</span>
+            </div>
+            
+            <h3 class="text-2xl sm:text-3xl font-black text-white tracking-tight">
+              每一毫秒都重要
+            </h3>
+
+            <p class="text-sm text-[#A7A7AD] leading-relaxed">
+              为竞技游戏与实时连接优化专属网络路径，有效降低跨境联机延迟，极大减少高峰期网络波动与丢包率，助你发挥电竞级巅峰反应。
+            </p>
+          </div>
+
+          <div class="mt-8 pt-6 border-t border-[#18181B] flex items-center justify-between">
+            <span class="text-xs font-mono text-[#71717A]">OPTIMIZED FOR STEAM / EA / EPIC / RIOT</span>
+            <span class="text-xs font-mono text-emerald-400 font-bold">LOW JITTER</span>
+          </div>
+        </div>
+
+        <!-- Right Side: 3 Columns Grid -->
+        <div class="lg:col-span-6 grid grid-cols-1 sm:grid-cols-2 gap-6">
+          
+          <!-- Box 1: 4K Streaming -->
+          <div class="bg-[#0E0E12] border border-[#232329] rounded-[4px] p-6 space-y-4 hover:border-[#E60012] transition-all flex flex-col justify-between">
+            <div class="space-y-3">
+              <div class="text-xs font-mono font-bold text-cyan-400 uppercase">4K / 8K STREAMING</div>
+              <h3 class="text-xl font-bold text-white">稳定观看高清视频</h3>
+              <p class="text-xs text-[#A7A7AD] leading-relaxed">
+                高速独享超宽吞吐，原生支持主流全球流媒体平台，告别缓冲加载，随时随地享受 4K/8K 丝滑画质。
+              </p>
+            </div>
+            <div class="text-[11px] font-mono text-[#71717A] pt-4 border-t border-[#18181B]">
+              NETFLIX / YOUTUBE / DISNEY+
+            </div>
+          </div>
+
+          <!-- Box 2: AI Tools -->
+          <div class="bg-[#0E0E12] border border-[#232329] rounded-[4px] p-6 space-y-4 hover:border-[#E60012] transition-all flex flex-col justify-between">
+            <div class="space-y-3">
+              <div class="text-xs font-mono font-bold text-purple-400 uppercase">AI ECOSYSTEM</div>
+              <h3 class="text-xl font-bold text-white">连接全球 AI 服务</h3>
+              <p class="text-xs text-[#A7A7AD] leading-relaxed">
+                针对全球热门 AI 模型服务进行了专用解析优化，低延迟交互，保障大模型生产力工具流畅响应。
+              </p>
+            </div>
+            <div class="text-[11px] font-mono text-[#71717A] pt-4 border-t border-[#18181B]">
+              CHATGPT / CLAUDE / MIDJOURNEY
+            </div>
+          </div>
+
+          <!-- Box 3: Remote Work (Span 2) -->
+          <div class="sm:col-span-2 bg-[#0E0E12] border border-[#232329] rounded-[4px] p-6 space-y-4 hover:border-[#E60012] transition-all flex flex-col justify-between">
+            <div class="space-y-2">
+              <div class="text-xs font-mono font-bold text-amber-400 uppercase">REMOTE WORK & DEV</div>
+              <h3 class="text-xl font-bold text-white">跨境办公保持在线</h3>
+              <p class="text-xs text-[#A7A7AD] leading-relaxed">
+                为跨国协作、代码拉取（GitHub / GitLab）、远程服务器 SSH 终端与视频会议提供高可靠连接。
+              </p>
+            </div>
+            <div class="text-[11px] font-mono text-[#71717A] pt-2 flex justify-between">
+              <span>GITHUB / SLACK / ZOOM / TEAMS</span>
+              <span class="text-emerald-400 font-mono">HIGH AVAILABILITY</span>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- WHY CHOOSE XSUS (BUILT FOR PERFORMANCE - 4 METRICS) -->
+  <section id="why-us" class="w-full bg-[#050505] py-20 border-b border-[#18181B]">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center space-y-2 mb-16">
+        <div class="text-xs font-mono font-bold text-[#FF1538] uppercase tracking-wider">BUILT FOR PERFORMANCE</div>
+        <h2 class="font-tech text-3xl sm:text-4xl font-black text-white uppercase">
+          为什么选择 XSUS
+        </h2>
+        <p class="text-sm text-[#A7A7AD] max-w-xl mx-auto">
+          以性能与稳定性为核心设计的高标准网络基础设施
+        </p>
+      </div>
+
+      <!-- 4 Core Metrics -->
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+        
+        <!-- 01 -->
+        <div class="bg-[#0B0B0E] border-t-2 border-t-[#E60012] border-x border-b border-[#232329] p-6 rounded-[2px] space-y-3">
+          <div class="font-tech text-3xl font-black text-[#FF1538]">01</div>
+          <h3 class="text-lg font-bold text-white">高速网络</h3>
+          <p class="text-xs text-[#A7A7AD] leading-relaxed">
+            精选多线 BGP 高速骨干通道，提供充沛带宽冗余，峰值时段依然流畅不卡顿。
+          </p>
+        </div>
+
+        <!-- 02 -->
+        <div class="bg-[#0B0B0E] border-t-2 border-t-[#E60012] border-x border-b border-[#232329] p-6 rounded-[2px] space-y-3">
+          <div class="font-tech text-3xl font-black text-[#FF1538]">02</div>
+          <h3 class="text-lg font-bold text-white">全球节点</h3>
+          <p class="text-xs text-[#A7A7AD] leading-relaxed">
+            覆盖亚太、北美等核心热门网络枢纽，多点冗余部署，随时无缝切换优质线路。
+          </p>
+        </div>
+
+        <!-- 03 -->
+        <div class="bg-[#0B0B0E] border-t-2 border-t-[#E60012] border-x border-b border-[#232329] p-6 rounded-[2px] space-y-3">
+          <div class="font-tech text-3xl font-black text-[#FF1538]">03</div>
+          <h3 class="text-lg font-bold text-white">多平台支持</h3>
+          <p class="text-xs text-[#A7A7AD] leading-relaxed">
+            全面适配主流第三方通用代理软件，一次订阅即可在手机、电脑等多设备自由使用。
+          </p>
+        </div>
+
+        <!-- 04 -->
+        <div class="bg-[#0B0B0E] border-t-2 border-t-[#E60012] border-x border-b border-[#232329] p-6 rounded-[2px] space-y-3">
+          <div class="font-tech text-3xl font-black text-[#FF1538]">04</div>
+          <h3 class="text-lg font-bold text-white">稳定服务</h3>
+          <p class="text-xs text-[#A7A7AD] leading-relaxed">
+            智能化线路健康监测系统，自动规避故障链路，全天候保障你的连接畅通无阻。
+          </p>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- CLIENT SUPPORT SECTION -->
+  <section id="clients" class="w-full bg-[#080808] py-20 border-b border-[#18181B]">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center space-y-3 mb-14">
+        <div class="text-xs font-mono font-bold text-[#FF1538] uppercase tracking-wider">MULTI-PLATFORM COMPATIBILITY</div>
+        <h2 class="font-tech text-3xl sm:text-4xl font-black text-white uppercase">
+          一个 XSUS，多设备连接
+        </h2>
+        <p class="text-sm sm:text-base text-[#A7A7AD] max-w-xl mx-auto">
+          支持常见第三方代理客户端使用。全平台通用订阅标准，一键导入轻松配置。
+        </p>
+      </div>
+
+      <!-- OS Support Badges -->
+      <div class="grid grid-cols-2 sm:grid-cols-4 gap-4 mb-10">
+        
+        <!-- Windows -->
+        <div class="bg-[#0E0E12] border border-[#232329] p-5 rounded-[4px] text-center space-y-2 hover:border-[#E60012] transition-all">
+          <div class="w-10 h-10 mx-auto bg-[#18181B] rounded-[2px] flex items-center justify-center text-[#FF1538]">
+            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M0 3.449L9.75 2.1v9.451H0m10.949-9.602L24 0v11.4H10.949M0 12.6h9.75v9.451L0 20.699M10.949 12.6H24V24l-12.951-1.801"/></svg>
+          </div>
+          <h3 class="font-bold text-white text-sm">Windows</h3>
+          <p class="text-xs text-[#71717A]">Windows 10 / 11</p>
+        </div>
+
+        <!-- macOS -->
+        <div class="bg-[#0E0E12] border border-[#232329] p-5 rounded-[4px] text-center space-y-2 hover:border-[#E60012] transition-all">
+          <div class="w-10 h-10 mx-auto bg-[#18181B] rounded-[2px] flex items-center justify-center text-[#FF1538]">
+            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M15.97 4.07c.61-.74 1.02-1.77.9-2.8-.88.04-1.95.59-2.58 1.33-.56.65-.99 1.7-1.02 2.74.99.08 1.99-.53 2.7-1.27z"/></svg>
+          </div>
+          <h3 class="font-bold text-white text-sm">macOS</h3>
+          <p class="text-xs text-[#71717A]">Apple Silicon / Intel</p>
+        </div>
+
+        <!-- iPhone / iOS -->
+        <div class="bg-[#0E0E12] border border-[#232329] p-5 rounded-[4px] text-center space-y-2 hover:border-[#E60012] transition-all">
+          <div class="w-10 h-10 mx-auto bg-[#18181B] rounded-[2px] flex items-center justify-center text-[#FF1538]">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z"/></svg>
+          </div>
+          <h3 class="font-bold text-white text-sm">iPhone / iPad</h3>
+          <p class="text-xs text-[#71717A]">iOS 15+</p>
+        </div>
+
+        <!-- Android -->
+        <div class="bg-[#0E0E12] border border-[#232329] p-5 rounded-[4px] text-center space-y-2 hover:border-[#E60012] transition-all">
+          <div class="w-10 h-10 mx-auto bg-[#18181B] rounded-[2px] flex items-center justify-center text-[#FF1538]">
+            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M17.523 15.3414c-.5511 0-.9993-.4486-.9993-.9997s.4482-.9993.9993-.9993c.551 0 .9993.4482.9993.9993.0001.5511-.4483.9997-.9993.9997m-11.046 0c-.5511 0-.9993-.4486-.9993-.9997s.4482-.9993.9993-.9993c.5511 0 .9993.4482.9993.9993 0 .5511-.4482.9997-.9993.9997m11.4045-6.02l1.9973-3.4592a.416.416 0 00-.1521-.5676.416.416 0 00-.5676.1521l-2.0223 3.503C15.5902 8.411 13.856 8.1 12 8.1s-3.5902.311-5.1368.8507L4.8409 5.4477a.4161.4161 0 00-.5677-.1521.4157.4157 0 00-.1521.5676l1.9973 3.4592C2.6889 11.1867.3432 14.6589 0 18.761h24c-.3432-4.1021-2.6889-7.5743-6.1185-9.4396"/></svg>
+          </div>
+          <h3 class="font-bold text-white text-sm">Android</h3>
+          <p class="text-xs text-[#71717A]">Phone / Tablet / TV</p>
+        </div>
+
+      </div>
+
+      <!-- Third-Party Clients Supported -->
+      <div class="bg-[#0B0B0E] border border-[#232329] p-6 rounded-[4px]">
+        <div class="text-xs font-mono text-[#A7A7AD] uppercase mb-4 tracking-wider">SUPPORTED PROXY CLIENTS</div>
+        <div class="flex flex-wrap gap-2.5">
+          <span class="px-3 py-1.5 bg-[#18181B] border border-[#27272A] text-xs font-medium text-white rounded-[2px]">Clash Verge</span>
+          <span class="px-3 py-1.5 bg-[#18181B] border border-[#27272A] text-xs font-medium text-white rounded-[2px]">Clash Meta (Mihomo)</span>
+          <span class="px-3 py-1.5 bg-[#18181B] border border-[#27272A] text-xs font-medium text-white rounded-[2px]">Shadowrocket (小火箭)</span>
+          <span class="px-3 py-1.5 bg-[#18181B] border border-[#27272A] text-xs font-medium text-white rounded-[2px]">Sing-box</span>
+          <span class="px-3 py-1.5 bg-[#18181B] border border-[#27272A] text-xs font-medium text-white rounded-[2px]">V2Ray / V2rayN</span>
+          <span class="px-3 py-1.5 bg-[#18181B] border border-[#27272A] text-xs font-medium text-white rounded-[2px]">Trojan</span>
+          <span class="px-3 py-1.5 bg-[#18181B] border border-[#27272A] text-xs font-medium text-white rounded-[2px]">Surge</span>
+          <span class="px-3 py-1.5 bg-[#18181B] border border-[#27272A] text-xs font-medium text-white rounded-[2px]">Quantumult X</span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- PERFORMANCE NUMBERS SECTION -->
+  <section class="w-full bg-[#050505] py-16 border-b border-[#18181B]">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
+        
+        <div class="p-4 space-y-1">
+          <div class="font-tech text-3xl sm:text-4xl lg:text-5xl font-black text-[#FF1538]">HIGH SPEED</div>
+          <div class="text-xs font-mono font-bold text-white uppercase tracking-wider">高速专线通道</div>
+          <p class="text-[11px] text-[#71717A]">超大带宽大流量畅享</p>
+        </div>
+
+        <div class="p-4 space-y-1">
+          <div class="font-tech text-3xl sm:text-4xl lg:text-5xl font-black text-white">GLOBAL</div>
+          <div class="text-xs font-mono font-bold text-white uppercase tracking-wider">多地区优质节点</div>
+          <p class="text-[11px] text-[#71717A]">亚太与欧美核心覆盖</p>
+        </div>
+
+        <div class="p-4 space-y-1">
+          <div class="font-tech text-3xl sm:text-4xl lg:text-5xl font-black text-[#FF1538]">24H</div>
+          <div class="text-xs font-mono font-bold text-white uppercase tracking-wider">全天候服务支持</div>
+          <p class="text-[11px] text-[#71717A]">实时链路健康状态监测</p>
+        </div>
+
+        <div class="p-4 space-y-1">
+          <div class="font-tech text-3xl sm:text-4xl lg:text-5xl font-black text-white">MULTI</div>
+          <div class="text-xs font-mono font-bold text-white uppercase tracking-wider">多设备场景通用</div>
+          <p class="text-[11px] text-[#71717A]">主流系统与客户端适配</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- 3-STEP GETTING STARTED SECTION -->
+  <section class="w-full bg-[#080808] py-20 border-b border-[#18181B]">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center space-y-2 mb-14">
+        <div class="text-xs font-mono font-bold text-[#FF1538] uppercase tracking-wider">QUICK START GUIDE</div>
+        <h2 class="font-tech text-3xl sm:text-4xl font-black text-white uppercase">
+          3 步开始使用 XSUS
+        </h2>
+        <p class="text-sm text-[#A7A7AD]">
+          简单直观的操作流程，几分钟内即可完成配置并开始连接
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8 relative">
+        
+        <!-- Step 1 -->
+        <div class="bg-[#0B0B0E] border border-[#232329] p-6 rounded-[4px] relative space-y-3 hover:border-[#E60012] transition-all">
+          <div class="font-tech text-2xl font-black text-[#FF1538]">01</div>
+          <h3 class="text-lg font-bold text-white">创建账号</h3>
+          <p class="text-xs text-[#A7A7AD] leading-relaxed">
+            点击官网注册按钮，使用邮箱快速注册你的专属 XSUS 通行账号，进入用户中心管理后台。
+          </p>
+        </div>
+
+        <!-- Step 2 -->
+        <div class="bg-[#0B0B0E] border border-[#232329] p-6 rounded-[4px] relative space-y-3 hover:border-[#E60012] transition-all">
+          <div class="font-tech text-2xl font-black text-[#FF1538]">02</div>
+          <h3 class="text-lg font-bold text-white">选择适合你的套餐</h3>
+          <p class="text-xs text-[#A7A7AD] leading-relaxed">
+            在购买服务中浏览 Lite、Pro、Ultra 或 Max 方案，根据你的日常网络需求完成订阅。
+          </p>
+        </div>
+
+        <!-- Step 3 -->
+        <div class="bg-[#0B0B0E] border border-[#232329] p-6 rounded-[4px] relative space-y-3 hover:border-[#E60012] transition-all">
+          <div class="font-tech text-2xl font-black text-[#FF1538]">03</div>
+          <h3 class="text-lg font-bold text-white">导入客户端并连接</h3>
+          <p class="text-xs text-[#A7A7AD] leading-relaxed">
+            一键复制订阅链接或扫描二维码导入 Clash、Shadowrocket 等软件，选择节点开启加速。
+          </p>
+        </div>
+
+      </div>
+
+      <!-- Center CTA -->
+      <div class="mt-12 text-center">
+        <a 
+          href={CTA_URL} 
+          target={CTA_TARGET} 
+          rel={CTA_REL}
+          class="inline-flex items-center gap-2 bg-[#E60012] hover:bg-[#FF1538] text-white text-sm font-bold uppercase tracking-wider px-8 py-3.5 rounded-[2px] transition-all shadow-red-edge"
+        >
+          <span>立即开始</span>
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- SEO CONTENT SECTION: XSUS 使用指南 (Clean Editorial Layout, ~1200 original words) -->
+  <section id="guide" class="w-full bg-[#050505] py-20 border-b border-[#18181B]">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center space-y-2 mb-12">
+        <div class="text-xs font-mono font-bold text-[#FF1538] uppercase tracking-wider">TECHNICAL KNOWLEDGE & GUIDE</div>
+        <h2 class="font-tech text-2xl sm:text-3xl font-black text-white uppercase">
+          XSUS 使用指南与网络加速知识
+        </h2>
+        <p class="text-xs sm:text-sm text-[#A7A7AD]">
+          系统了解高速网络加速原理、节点选择策略与常见客户端配置
+        </p>
+      </div>
+
+      <!-- Clean Knowledge Cards & Prose -->
+      <div class="space-y-8 text-sm text-[#A7A7AD] leading-relaxed">
+        
+        <!-- Article block 1 -->
+        <article class="bg-[#0B0B0E] border border-[#232329] p-6 sm:p-8 rounded-[4px] space-y-3">
+          <h3 class="font-bold text-lg text-white flex items-center gap-2">
+            <span class="w-1.5 h-4 bg-[#E60012]"></span>
+            什么是 XSUS 及其加速架构？
+          </h3>
+          <p>
+            XSUS 是一家专注于高可用性、极低延迟与大带宽并发的专业网络加速品牌。面对日益复杂的国际网络互联环境，XSUS 通过在全球核心骨干网络节点部署高性能中继接入点，结合智能 BGP 动态分流技术，为用户提供稳定、安全且高速的跨境网络访问体验。无论是访问海外开发资源、使用先进 AI 生产力模型，还是享受超高清流媒体与跨境竞技游戏，XSUS 均能提供充沛的带宽与毫秒级连接响应。
+          </p>
+        </article>
+
+        <!-- Article block 2 -->
+        <article class="bg-[#0B0B0E] border border-[#232329] p-6 sm:p-8 rounded-[4px] space-y-3">
+          <h3 class="font-bold text-lg text-white flex items-center gap-2">
+            <span class="w-1.5 h-4 bg-[#E60012]"></span>
+            机场与传统 VPN 的核心技术区别
+          </h3>
+          <p>
+            在日常网络交流中，许多用户常将“机场”与“VPN”混为一谈。从技术原理来看，传统 VPN 主要用于企业内网加密隧道连接，往往采用全局代理模式，对所有流量无差别加密转发，容易导致本地网络变慢、海外访问延迟过高。而现代“机场”（即高性能代理服务）基于 Shadowsocks、V2Ray、Trojan 等更轻量高效的应用层协议，支持通过规则实现“国内直连、海外加速”的智能分流机制。这样不仅大幅降低了网络传输开销，还能实现更优的带宽吞吐和更低的网络抖动。
+          </p>
+        </article>
+
+        <!-- Article block 3 -->
+        <article class="bg-[#0B0B0E] border border-[#232329] p-6 sm:p-8 rounded-[4px] space-y-3">
+          <h3 class="font-bold text-lg text-white flex items-center gap-2">
+            <span class="w-1.5 h-4 bg-[#E60012]"></span>
+            如何根据业务场景精准选择节点？
+          </h3>
+          <p>
+            合理选择节点地区是获得最佳使用体验的关键：
+          </p>
+          <ul class="list-disc list-inside space-y-1.5 text-xs text-gray-300 pl-2">
+            <li><strong class="text-white">游戏竞技用户：</strong>优先选择香港或日本直连低延迟节点。低物理距离能显著压缩 Ping 值，避免由于网络跳跃过多引发的卡顿与丢包。</li>
+            <li><strong class="text-white">4K/8K 影音用户：</strong>推荐选择台湾、新加坡或美国流媒体专用节点，具备大带宽吞吐与原生 IP 解析，秒开超清无缓冲。</li>
+            <li><strong class="text-white">AI 生产力与开发用户：</strong>推荐使用美国或新加坡节点访问 ChatGPT、Claude、GitHub、Docker Hub 等海外技术服务，连接稳定性更高。</li>
+          </ul>
+        </article>
+
+        <!-- Article block 4 -->
+        <article class="bg-[#0B0B0E] border border-[#232329] p-6 sm:p-8 rounded-[4px] space-y-3">
+          <h3 class="font-bold text-lg text-white flex items-center gap-2">
+            <span class="w-1.5 h-4 bg-[#E60012]"></span>
+            主流平台客户端配置指南
+          </h3>
+          <p>
+            XSUS 兼容当前所有主流的第三方开源及通用代理客户端：
+          </p>
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 text-xs pt-2">
+            <div class="bg-[#111115] p-3.5 rounded-[2px] border border-[#18181B]">
+              <strong class="text-white block mb-1">Windows / macOS</strong>
+              <span>推荐使用 Clash Verge 或 Clash Meta (Mihomo)，界面现代化，支持一键导入订阅与系统代理智能切换。</span>
+            </div>
+            <div class="bg-[#111115] p-3.5 rounded-[2px] border border-[#18181B]">
+              <strong class="text-white block mb-1">iOS (iPhone / iPad)</strong>
+              <span>推荐使用 Shadowrocket (小火箭) 或 Sing-box，在 App Store 下载后扫描用户中心订阅二维码即可。</span>
+            </div>
+            <div class="bg-[#111115] p-3.5 rounded-[2px] border border-[#18181B]">
+              <strong class="text-white block mb-1">Android (安卓手机/平板)</strong>
+              <span>推荐使用 Clash Meta for Android 或 v2rayNG，支持按应用分流与规则代理。</span>
+            </div>
+            <div class="bg-[#111115] p-3.5 rounded-[2px] border border-[#18181B]">
+              <strong class="text-white block mb-1">分流模式建议</strong>
+              <span>日常建议选择“规则模式 (Rule)”或“配置模式”，让国内网站不走代理直接连接，海外网站走加速节点。</span>
+            </div>
+          </div>
+        </article>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- FAQ SECTION (Accordion) -->
+  <section id="faq" class="w-full bg-[#080808] py-20 border-b border-[#18181B]">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center space-y-2 mb-14">
+        <div class="text-xs font-mono font-bold text-[#FF1538] uppercase tracking-wider">FREQUENTLY ASKED QUESTIONS</div>
+        <h2 class="font-tech text-3xl sm:text-4xl font-black text-white uppercase">
+          常见问题解答
+        </h2>
+        <p class="text-sm text-[#A7A7AD]">
+          关于 XSUS 官网、套餐选择、客户端使用与网络加速的常见疑问
+        </p>
+      </div>
+
+      <!-- Accordions -->
+      <div class="space-y-4">
+        
+        <!-- Q1 -->
+        <details class="group bg-[#0B0B0E] border border-[#232329] rounded-[4px] p-5 [&_svg]:open:-rotate-180 transition-all">
+          <summary class="flex justify-between items-center font-bold text-white text-sm sm:text-base cursor-pointer list-none select-none">
+            <span>XSUS 是什么？</span>
+            <svg class="w-4 h-4 text-[#FF1538] transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+          </summary>
+          <div class="mt-3 text-xs sm:text-sm text-[#A7A7AD] leading-relaxed pt-3 border-t border-[#18181B]">
+            XSUS 是一家专注于提供高性能、极低延迟全球节点连接服务的品牌，适用于电竞游戏加速、4K/8K 超高清流媒体观看、AI 模型与工具访问以及跨境远程办公等多场景。
+          </div>
+        </details>
+
+        <!-- Q2 -->
+        <details class="group bg-[#0B0B0E] border border-[#232329] rounded-[4px] p-5 [&_svg]:open:-rotate-180 transition-all">
+          <summary class="flex justify-between items-center font-bold text-white text-sm sm:text-base cursor-pointer list-none select-none">
+            <span>XSUS 是 VPN 吗？与 VPN 有什么区别？</span>
+            <svg class="w-4 h-4 text-[#FF1538] transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+          </summary>
+          <div class="mt-3 text-xs sm:text-sm text-[#A7A7AD] leading-relaxed pt-3 border-t border-[#18181B]">
+            XSUS 属于现代高性能节点代理服务（常称机场）。与传统全局 VPN 相比，XSUS 采用轻量化高效传输协议，支持精细化的智能分流规则，国内流量直连、海外流量加速，在速度、延迟与带宽并发方面表现更为卓越。
+          </div>
+        </details>
+
+        <!-- Q3 -->
+        <details class="group bg-[#0B0B0E] border border-[#232329] rounded-[4px] p-5 [&_svg]:open:-rotate-180 transition-all">
+          <summary class="flex justify-between items-center font-bold text-white text-sm sm:text-base cursor-pointer list-none select-none">
+            <span>机场是什么意思？</span>
+            <svg class="w-4 h-4 text-[#FF1538] transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+          </summary>
+          <div class="mt-3 text-xs sm:text-sm text-[#A7A7AD] leading-relaxed pt-3 border-t border-[#18181B]">
+            “机场”是网络加速领域的通用俗称，源于早期 Shadowsocks 客户端的纸飞机图标。它代表提供多地区高速节点订阅的服务平台，用户可以通过订阅链接直接导入各种主流代理软件中。
+          </div>
+        </details>
+
+        <!-- Q4 -->
+        <details class="group bg-[#0B0B0E] border border-[#232329] rounded-[4px] p-5 [&_svg]:open:-rotate-180 transition-all">
+          <summary class="flex justify-between items-center font-bold text-white text-sm sm:text-base cursor-pointer list-none select-none">
+            <span>XSUS 支持哪些设备与操作系统？</span>
+            <svg class="w-4 h-4 text-[#FF1538] transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+          </summary>
+          <div class="mt-3 text-xs sm:text-sm text-[#A7A7AD] leading-relaxed pt-3 border-t border-[#18181B]">
+            XSUS 全面支持 Windows (10/11)、macOS (Intel 与 Apple Silicon M系列)、iOS (iPhone / iPad)、Android 手机/平板以及 Linux 系统，满足多端设备协同使用。
+          </div>
+        </details>
+
+        <!-- Q5 -->
+        <details class="group bg-[#0B0B0E] border border-[#232329] rounded-[4px] p-5 [&_svg]:open:-rotate-180 transition-all">
+          <summary class="flex justify-between items-center font-bold text-white text-sm sm:text-base cursor-pointer list-none select-none">
+            <span>XSUS 支持 Clash 与 Shadowrocket 吗？</span>
+            <svg class="w-4 h-4 text-[#FF1538] transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+          </summary>
+          <div class="mt-3 text-xs sm:text-sm text-[#A7A7AD] leading-relaxed pt-3 border-t border-[#18181B]">
+            是的，XSUS 提供通用订阅格式，完美兼容 Clash Verge、Clash Meta (Mihomo)、Shadowrocket (小火箭)、Sing-box、V2Ray、Trojan、Surge 及 Quantumult X 等第三方流行代理客户端。
+          </div>
+        </details>
+
+        <!-- Q6 -->
+        <details class="group bg-[#0B0B0E] border border-[#232329] rounded-[4px] p-5 [&_svg]:open:-rotate-180 transition-all">
+          <summary class="flex justify-between items-center font-bold text-white text-sm sm:text-base cursor-pointer list-none select-none">
+            <span>平时使用应该选择哪个节点？</span>
+            <svg class="w-4 h-4 text-[#FF1538] transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+          </summary>
+          <div class="mt-3 text-xs sm:text-sm text-[#A7A7AD] leading-relaxed pt-3 border-t border-[#18181B]">
+            日常网页浏览与办公推荐选择香港或日本节点，延迟低速度快；观看台湾本地流媒体推荐台湾节点；访问东南亚业务推荐新加坡节点；使用 AI 工具与美区服务推荐美国节点。
+          </div>
+        </details>
+
+        <!-- Q7 -->
+        <details class="group bg-[#0B0B0E] border border-[#232329] rounded-[4px] p-5 [&_svg]:open:-rotate-180 transition-all">
+          <summary class="flex justify-between items-center font-bold text-white text-sm sm:text-base cursor-pointer list-none select-none">
+            <span>XSUS 可以用于竞技游戏加速吗？</span>
+            <svg class="w-4 h-4 text-[#FF1538] transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+          </summary>
+          <div class="mt-3 text-xs sm:text-sm text-[#A7A7AD] leading-relaxed pt-3 border-t border-[#18181B]">
+            可以。XSUS 拥有优化的国际路由通道，针对 Steam、Apex、VALORANT 等外服游戏进行了抖动抑制与路由优化，建议选择 Ultra 或 Pro 套餐中的香港/日本专线节点以获得更低 Ping 值。
+          </div>
+        </details>
+
+        <!-- Q8 -->
+        <details class="group bg-[#0B0B0E] border border-[#232329] rounded-[4px] p-5 [&_svg]:open:-rotate-180 transition-all">
+          <summary class="flex justify-between items-center font-bold text-white text-sm sm:text-base cursor-pointer list-none select-none">
+            <span>是否支持 ChatGPT、Claude 等海外 AI 工具？</span>
+            <svg class="w-4 h-4 text-[#FF1538] transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+          </summary>
+          <div class="mt-3 text-xs sm:text-sm text-[#A7A7AD] leading-relaxed pt-3 border-t border-[#18181B]">
+            是的，XSUS 核心节点均针对 OpenAI (ChatGPT)、Anthropic (Claude)、Midjourney 以及 GitHub Copilot 进行了原生解锁与解析优化，避免频繁报错或验证阻拦。
+          </div>
+        </details>
+
+        <!-- Q9 -->
+        <details class="group bg-[#0B0B0E] border border-[#232329] rounded-[4px] p-5 [&_svg]:open:-rotate-180 transition-all">
+          <summary class="flex justify-between items-center font-bold text-white text-sm sm:text-base cursor-pointer list-none select-none">
+            <span>如何开始使用 XSUS？</span>
+            <svg class="w-4 h-4 text-[#FF1538] transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+          </summary>
+          <div class="mt-3 text-xs sm:text-sm text-[#A7A7AD] leading-relaxed pt-3 border-t border-[#18181B]">
+            只需 3 步：1. 点击网页右上角或底部的“立即注册”创建账号；2. 在用户中心选择并订阅适合你的套餐；3. 将订阅链接复制到 Clash 或 Shadowrocket 客户端中即可一键开启加速。
+          </div>
+        </details>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- FINAL CTA BANNER (Aggressive Gaming Cyber Aesthetics) -->
+  <section class="relative w-full bg-[#050505] py-24 border-b border-[#18181B] overflow-hidden">
+    <!-- Cyber Red Background Burst -->
+    <div class="absolute inset-0 bg-radial-glow opacity-40 pointer-events-none"></div>
+    <div class="absolute -bottom-24 left-1/2 -translate-x-1/2 w-[600px] h-[300px] bg-[#E60012]/20 blur-[100px] rounded-full pointer-events-none"></div>
+
+    <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10 space-y-6">
+      
+      <!-- Big Decorative Typography -->
+      <div class="font-tech text-xs sm:text-sm font-mono tracking-widest text-[#FF1538] uppercase">
+        READY FOR XSUS HIGH PERFORMANCE?
+      </div>
+
+      <h2 class="text-3xl sm:text-5xl lg:text-6xl font-black text-white uppercase tracking-tight">
+        准备好体验更快的网络了吗？
+      </h2>
+
+      <p class="text-sm sm:text-base text-[#A7A7AD] max-w-xl mx-auto leading-relaxed">
+        告别卡顿与网络延迟，选择适合自己的方案，开始连接 XSUS 全球高速网络。
+      </p>
+
+      <div class="pt-4 flex flex-col sm:flex-row items-center justify-center gap-4">
+        <a 
+          href={CTA_URL} 
+          target={CTA_TARGET} 
+          rel={CTA_REL}
+          class="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-[#E60012] hover:bg-[#FF1538] text-white font-bold text-sm sm:text-base uppercase tracking-wider px-10 py-4 rounded-[2px] transition-all duration-300 shadow-[0_0_25px_rgba(230,0,18,0.5)] hover:shadow-[0_0_40px_rgba(255,21,56,0.8)] group"
+        >
+          <span>立即使用 XSUS</span>
+          <svg class="w-5 h-5 transform group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+          </svg>
+        </a>
+      </div>
+
+      <!-- Trust Badges -->
+      <div class="pt-8 flex flex-wrap items-center justify-center gap-6 text-xs text-[#71717A] font-mono">
+        <span class="flex items-center gap-1.5"><svg class="w-3.5 h-3.5 text-emerald-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg> 即开即用</span>
+        <span class="flex items-center gap-1.5"><svg class="w-3.5 h-3.5 text-emerald-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg> 极速节点覆盖</span>
+        <span class="flex items-center gap-1.5"><svg class="w-3.5 h-3.5 text-emerald-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg> 全平台客户端支持</span>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- FOOTER (Deep Black, Clean 4-Column Layout) -->
+  <footer class="w-full bg-[#050505] text-[#A7A7AD] border-t border-[#18181B] py-16">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="grid grid-cols-2 md:grid-cols-5 gap-8 mb-12">
+        
+        <!-- Brand Info (Col 1-2 on mobile, 2 cols on desktop) -->
+        <div class="col-span-2 space-y-4">
+          <div class="flex items-baseline gap-1">
+            <span class="font-tech text-2xl font-black tracking-widest text-white uppercase">XSUS</span>
+            <span class="text-[#E60012] font-black text-lg">//</span>
+          </div>
+          <p class="text-xs text-[#71717A] max-w-sm leading-relaxed">
+            XSUS 致力于为全球用户提供高性能、低延迟且安全稳定的网络节点连接方案，让游戏、影音与 AI 生产力随时畅通无阻。
+          </p>
+          <div class="text-xs font-mono text-[#52525B]">
+            OFFICIAL DOMAIN: <span class="text-gray-300">https://vpnxsus.cfd</span>
+          </div>
+        </div>
+
+        <!-- Col 2: 产品 -->
+        <div class="space-y-3 text-xs">
+          <h4 class="font-bold text-white uppercase tracking-wider font-mono">产品服务</h4>
+          <ul class="space-y-2">
+            <li><a href="#pricing" class="hover:text-white transition-colors">套餐方案</a></li>
+            <li><a href="#nodes" class="hover:text-white transition-colors">全球高速节点</a></li>
+            <li><a href="#clients" class="hover:text-white transition-colors">客户端支持</a></li>
+            <li><a href="#highlights" class="hover:text-white transition-colors">应用场景</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 3: 资源 & 教程 -->
+        <div class="space-y-3 text-xs">
+          <h4 class="font-bold text-white uppercase tracking-wider font-mono">资源与支持</h4>
+          <ul class="space-y-2">
+            <li><a href="#guide" class="hover:text-white transition-colors">使用指南</a></li>
+            <li><a href="#faq" class="hover:text-white transition-colors">常见问题</a></li>
+            <li><a href={CTA_URL} target={CTA_TARGET} rel={CTA_REL} class="hover:text-white transition-colors">用户中心</a></li>
+            <li><a href={CTA_URL} target={CTA_TARGET} rel={CTA_REL} class="hover:text-white transition-colors">工单支持</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 4: 热门内容 (SEO Tags) -->
+        <div class="space-y-3 text-xs">
+          <h4 class="font-bold text-white uppercase tracking-wider font-mono">热门内容</h4>
+          <ul class="space-y-2 text-[#71717A]">
+            <li><a href="#pricing" class="hover:text-white transition-colors">机场推荐</a></li>
+            <li><a href="#pricing" class="hover:text-white transition-colors">VPN推荐</a></li>
+            <li><a href="#clients" class="hover:text-white transition-colors">Clash机场</a></li>
+            <li><a href="#why-us" class="hover:text-white transition-colors">稳定机场与高速线路</a></li>
+            <li><a href="#highlights" class="hover:text-white transition-colors">科学上网与网络加速</a></li>
+          </ul>
+        </div>
+
+      </div>
+
+      <!-- Bottom Line & Copyright -->
+      <div class="pt-8 border-t border-[#18181B] flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-[#52525B]">
+        <div>
+          © 2026 XSUS. All Rights Reserved.
+        </div>
+        <div class="flex space-x-6">
+          <a href={CTA_URL} target={CTA_TARGET} rel={CTA_REL} class="hover:text-gray-400 transition-colors">Privacy Policy</a>
+          <a href={CTA_URL} target={CTA_TARGET} rel={CTA_REL} class="hover:text-gray-400 transition-colors">Terms of Service</a>
+          <a href="/robots.txt" class="hover:text-gray-400 transition-colors">Robots.txt</a>
+          <a href="/sitemap-index.xml" class="hover:text-gray-400 transition-colors">Sitemap</a>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- Vanilla Mobile Menu Script -->
+  <script is:inline>
+    document.addEventListener('DOMContentLoaded', () => {
+      const btn = document.getElementById('mobile-menu-btn');
+      const menu = document.getElementById('mobile-menu');
+      const links = document.querySelectorAll('.mobile-nav-link');
+
+      if (btn && menu) {
+        btn.addEventListener('click', () => {
+          menu.classList.toggle('hidden');
+        });
+
+        links.forEach(link => {
+          link.addEventListener('click', () => {
+            menu.classList.add('hidden');
+          });
+        });
+      }
+    });
+  </script>
+</Layout>
